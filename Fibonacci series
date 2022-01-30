@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class FibonacciSeries {
+
+	public static void main(String[] args) {
+		
+		System.out.println("--------TO PRINT FIBONACCI SERIES--------");
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the number of elements that you have to print : ");
+		int a = 0,b=1;
+		int num = input.nextInt();
+		System.out.println(" "+"0");
+		for(int i=1;i<=num;i++) {
+			int c = a+b;
+			System.out.println(" "+c);
+			a=b;
+			b=c;
+		}
+	}
+
+}

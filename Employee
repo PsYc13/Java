@@ -1,0 +1,54 @@
+import java.util.Scanner;
+public class Project3 {
+ 
+	public static void main(String[] args) {
+		
+		String name;
+		long year;
+		String Address;
+		String Area;
+		long Pincode;
+		Scanner input = new Scanner(System.in);
+		System.out.println("     PLEASE ENTER THE ADDRESS IN CAMEL CASING FORM     ");
+		System.out.println("Enter the name of the first Employee : ");
+		name = input.next();
+		System.out.println("Enter the year of joining : ");
+		year = input.nextLong();
+		System.out.println("Enter the address of the first Employee : ");
+		Address = input.next();
+		System.out.println("Enter the area or locality of the first Employee : ");
+		Area = input.next();
+		System.out.println("Enter the pincode : ");
+		Pincode = input.nextLong();
+		System.out.println();
+		
+		System.out.println("Enter the name of the Employee 2 : ");
+		String name2 = input.next();
+		System.out.println("Enter the year of joining : ");
+		long year2 = input.nextLong();
+		System.out.println("Enter the Address of the Employee 2 ");
+		String Address2 = input.next();
+		System.out.println("Enter the Area or loacility of Employee 2 : ");
+		String Area2 = input.next();
+		System.out.println("Enter the pincode : ");
+		long pin2 = input.nextLong();
+		System.out.println();
+		
+		System.out.println("Enter the name of Employee 3 : ");
+		String name3 = input.next();
+		System.out.println("Enter the year of joining of Employee 3 : ");
+		long year3 = input.nextLong();
+		System.out.println("Enter the Address of the Employee 3 : ");
+		String Address3 = input.next();
+		System.out.println("Enter the Area or loacality of the Employee 3 : ");
+		String Area3 = input.next();
+		System.out.println("Enter the Pincode : ");
+		long pin3 = input.nextLong();
+		
+		System.out.println(" NAME    YEAR    ADDRESS  ");
+		System.out.println(name+" "+year+" "+Address+" "+Area+" "+Pincode);
+		System.out.println(name2+" "+year2+" "+Address2+" "+Area2+" "+pin2);
+		System.out.println(name3+" "+year3+" "+Address3+" "+Area3+" "+pin3);
+
+	}
+}

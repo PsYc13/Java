@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.Scanner;
+class berth{
+    static void berthtype(int x){
+        if(x>0 && x<=72){
+            if(x%8==1 || x%8==4){
+                System.out.println("Your seat is Lower berth");
+            }
+            else if(x%8==2 || x%8==5){
+                System.out.println("Your seat is Middle berth");
+            }
+            else if(x%8==3 || x%8==6){
+                System.out.println("Your seat is Upper berth");
+            }
+            else if(x%8==7){
+                 System.out.println("Your seat is Side lower berth");
+            }
+            else{
+                 System.out.println("Your seat is Side upper berth");
+            }
+        }
+        else{
+            System.out.println("Your seat number is invalid");
+        }
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int s=sc.nextInt();
+        berthtype(s);
+    }
+}
